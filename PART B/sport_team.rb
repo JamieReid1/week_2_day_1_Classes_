@@ -29,15 +29,14 @@ class Team
     players.push(player_name)
   end
 
-def check_for_player(player_name)
-  players.include?(player_name)
-end
-
-def team_result(result)
-  if result == "Won"
-    @points += 3
+  def check_for_player(player_name)
+    players.include?(player_name)
   end
-end
 
+  def team_result(result)
+    if result == "Won"
+      @points += 3
+    end
+  end
 
 end
